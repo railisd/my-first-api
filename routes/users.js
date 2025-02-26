@@ -18,8 +18,6 @@ router.post('/register', (req, res) => {
     res.status(201).json({ message: "Επιτυχής εγγραφή!", user: newUser });
 });
 
-module.exports = router;
-
 // Endpoint για σύνδεση χρήστη
 router.post('/login', (req, res) => {
     const { email, password } = req.body;
@@ -33,4 +31,4 @@ router.post('/login', (req, res) => {
 });
 
 
-
+module.exports = router;
